@@ -1,0 +1,82 @@
+img {
+  max-width: 100%;
+  height: auto;
+  border-width: 0;
+  border-color: transparent;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+  width: 100%;
+}
+
+.foreground {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.globe {
+  width: 30em;
+  height: 35em;
+  position: absolute;
+  z-index: 100;
+  bottom: 2em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+.globe:hover {
+  cursor: pointer;
+}
+
+.globe-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+img.head {
+  width: 84px;
+  height: 103px;
+}
+
+#canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  z-index: 0;
+  margin: 40px auto 0;
+  border-radius: 50%;
+  width: 24.5em;
+  height: 25em;
+}
+
+.happy {
+  background-image: url("../img/happy.png");
+  background-image: url("../img/happy.svg"), none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80%;
+  max-width: 40em;
+  height: 15em;
+  position: absolute;
+  top: 5em;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}

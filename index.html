@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="language" content="English">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Happy Holidays from Trackuity</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body class="snowglobe">
+
+<div class="background"></div>
+<div class="foreground">
+	<div class="globe">
+		<img src="img/globe.png" class="globe-img">
+		<canvas id="canvas" width="800" height="800"></canvas>
+	</div>
+</div>
+<div class="happy"></div>
+
+<script src="js/shake.js"></script>
+<script src="js/snow.js"></script>
+<script>
+// Globe animation
+$(".globe").on('click', function(e) {
+	$('.globe').addClass('animated tada');
+});
+$(".globe").on("webkitAnimationEnd oanimationend msAnimationEnd animationend",
+    function() {
+        $(this).removeClass("animated tada");
+    }
+);
+
+// Play/Mute button
+$(".music").on('click', function(e) {
+	e.preventDefault();
+	$(".music").toggleClass("mute");
+});
+
+
+// Shake the globe using a device with an accelerometer
+var myShakeEvent = new Shake({
+    threshold: 15 // optional shake strength threshold
+});
+
+// start listening to device motion
+myShakeEvent.start();
+window.addEventListener('shake', shakeEvent, false);
+function shakeEvent() {
+	snowShow.shake();
+	$('.globe').click();
+}
+
+</script>
+
+</body>
+</html>
