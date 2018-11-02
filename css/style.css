@@ -30,15 +30,27 @@ img {
 }
 
 .globe {
-  width: 30em;
-  height: 35em;
+  width: 40em;
+  height: 47em;
   position: absolute;
   z-index: 100;
   bottom: 2em;
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index: 0;
+}
+@media (max-width: 1550px) {
+  .globe {
+    width: 30em;
+    height: 35em;
+  }
+}
+@media (max-width: 400px) {
+  .globe {
+    width: 22em;
+    height: 25.5em;
+    bottom: 4em;
+  }
 }
 
 .globe:hover {
@@ -59,10 +71,24 @@ img {
   left: 0px;
   right: 0;
   z-index: 0;
-  margin: 40px auto 0;
+  margin: 50px auto 0;
   border-radius: 50%;
-  width: 24.5em;
-  height: 25em;
+  width: 32.5em;
+  height: 33.5em;
+}
+@media (max-width: 1550px) {
+  #canvas {
+    margin: 40px auto 0;
+    width: 24.5em;
+    height: 25em;
+  }
+}
+@media (max-width: 400px) {
+  #canvas {
+    margin: 30px auto 0;
+    width: 17.8em;
+    height: 18.5em;
+  }
 }
 
 .animated {
@@ -99,7 +125,7 @@ img {
   background-size: contain;
   width: 90%;
   max-width: 40em;
-  height: 15em;
+  height: 7em;
   position: absolute;
   top: 5em;
   right: 0;
@@ -110,9 +136,31 @@ img {
   .happy {
     background-image: url("../img/happy_mobile.png");
     background-image: url("../img/happy_mobile.svg"), none;
-    top: 2.5em;
-    height: 16em;
+    top: 3em;
+    height: 11em;
     width: 70%;
     max-width: 18em;
+  }
+}
+
+.shake {
+  background-image: url("../img/shake.png");
+  background-image: url("../img/shake.svg"), none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+  max-width: 12em;
+  position: absolute;
+  bottom: 22em;
+  height: 5em;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .shake {
+    bottom: 18em;
+    height: 4em;
+    max-width: 9em;
   }
 }
