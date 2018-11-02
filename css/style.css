@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -49,11 +53,6 @@ img {
   z-index: 1;
 }
 
-img.head {
-  width: 84px;
-  height: 103px;
-}
-
 #canvas {
   position: absolute;
   top: 0px;
@@ -71,7 +70,7 @@ img.head {
   background-image: url("../img/happy.svg"), none;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 80%;
+  width: 90%;
   max-width: 40em;
   height: 15em;
   position: absolute;
