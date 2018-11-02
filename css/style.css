@@ -106,3 +106,13 @@ img {
   left: 0;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .happy {
+    background-image: url("../img/happy_mobile.png");
+    background-image: url("../img/happy_mobile.svg"), none;
+    top: 2.5em;
+    height: 16em;
+    width: 70%;
+    max-width: 18em;
+  }
+}
