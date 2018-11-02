@@ -411,9 +411,6 @@ SnowFlakes.prototype.shake = function () {
 			image.animating_image = true;
 		}
 	}
-
-	// Track globe shakes in Google Analytics
-	ga('send', 'event', 'globe', 'shake');
 };
 
 // Start the snow
