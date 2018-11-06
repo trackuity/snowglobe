@@ -177,7 +177,7 @@ img {
   left: 0;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 812px) {
   .happy {
     background-image: url("../img/happy_mobile.png");
     background-image: url("../img/happy_mobile.svg"), none;
@@ -199,6 +199,15 @@ img {
     top: 1.5em;
     height: 6em;
     max-width: 10em;
+  }
+}
+
+@media (max-height: 420px) and (min-width: 320px) and (max-width: 812px) and (orientation: landscape) {
+  .globe {
+    margin-left: 50%;
+  }
+  .happy {
+    margin-right: 50%;
   }
 }
 
