@@ -35,13 +35,6 @@ $(".globe").on("webkitAnimationEnd oanimationend msAnimationEnd animationend",
     }
 );
 
-// Play/Mute button
-$(".music").on('click', function(e) {
-	e.preventDefault();
-	$(".music").toggleClass("mute");
-});
-
-
 // Shake the globe using a device with an accelerometer
 var myShakeEvent = new Shake({
     threshold: 15 // optional shake strength threshold
@@ -54,7 +47,6 @@ function shakeEvent() {
 	snowShow.shake();
 	$('.globe').click();
 }
-
 </script>
 
 </body>
