@@ -58,7 +58,7 @@ img {
     bottom: 0.5em;
   }
 }
-@media (max-height: 568px) {
+@media (max-height: 568px), (max-width: 320px) {
   .globe {
     width: 19em;
     height: 22em;
@@ -109,7 +109,7 @@ img {
     height: 18.5em;
   }
 }
-@media (max-height: 568px) {
+@media (max-height: 568px), (max-width: 320px) {
   #canvas {
     margin: 25px auto 0;
     width: 15.6em;
@@ -152,7 +152,7 @@ img {
     max-width: 9em;
   }
 }
-@media (max-height: 568px) {
+@media (max-height: 568px), (max-width: 320px) {
   .shake {
     bottom: 13em;
     height: 3em;
