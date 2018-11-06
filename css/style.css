@@ -38,6 +38,7 @@ img {
   left: 0;
   right: 0;
   margin: 0 auto;
+  user-select: none;
 }
 @media (max-height: 968px) {
   .globe {
@@ -75,6 +76,7 @@ img {
   right: 0;
   margin: auto;
   z-index: 1;
+  user-select: none;
 }
 
 #canvas {
@@ -87,6 +89,7 @@ img {
   border-radius: 50%;
   width: 32.5em;
   height: 33.5em;
+  user-select: none;
 }
 @media (max-height: 968px) {
   #canvas {
