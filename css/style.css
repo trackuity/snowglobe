@@ -39,17 +39,29 @@ img {
   right: 0;
   margin: 0 auto;
 }
-@media (max-width: 1550px) {
+@media (max-height: 968px) {
   .globe {
     width: 30em;
     height: 35em;
   }
 }
-@media (max-width: 400px) {
+@media (max-height: 768px) {
+  .globe {
+    width: 26em;
+    height: 30em;
+  }
+}
+@media (max-height: 668px), (max-width: 420px) {
   .globe {
     width: 22em;
     height: 25.5em;
     bottom: 0.5em;
+  }
+}
+@media (max-height: 568px) {
+  .globe {
+    width: 19em;
+    height: 22em;
   }
 }
 
@@ -76,45 +88,75 @@ img {
   width: 32.5em;
   height: 33.5em;
 }
-@media (max-width: 1550px) {
+@media (max-height: 968px) {
   #canvas {
     margin: 40px auto 0;
     width: 24.5em;
     height: 25em;
   }
 }
-@media (max-width: 400px) {
+@media (max-height: 768px) {
+  #canvas {
+    margin: 35px auto 0;
+    width: 21.1em;
+    height: 21.5em;
+  }
+}
+@media (max-height: 668px), (max-width: 420px) {
   #canvas {
     margin: 30px auto 0;
     width: 17.8em;
     height: 18.5em;
   }
 }
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
+@media (max-height: 568px) {
+  #canvas {
+    margin: 25px auto 0;
+    width: 15.6em;
+    height: 16em;
+  }
 }
 
-.tada {
-  animation-name: tada;
+.shake {
+  background-image: url("../img/shake.png");
+  background-image: url("../img/shake.svg"), none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+  max-width: 14em;
+  position: absolute;
+  bottom: 30em;
+  height: 6em;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
-
-@keyframes tada {
-  0% {
-    transform: scale3d(1, 1, 1);
+@media (max-height: 968px) {
+  .shake {
+    bottom: 22em;
+    height: 5em;
+    max-width: 12em;
   }
-  10%, 20% {
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -5deg);
+}
+@media (max-height: 768px) {
+  .shake {
+    bottom: 18em;
+    height: 5em;
+    max-width: 10em;
   }
-  30%, 50%, 70%, 90% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 5deg);
+}
+@media (max-height: 668px), (max-width: 420px) {
+  .shake {
+    bottom: 14.5em;
+    height: 4em;
+    max-width: 9em;
   }
-  40%, 60%, 80% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -5deg);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
+}
+@media (max-height: 568px) {
+  .shake {
+    bottom: 13em;
+    height: 3em;
+    max-width: 8em;
   }
 }
 
@@ -142,32 +184,44 @@ img {
     max-width: 18em;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .happy {
     top: 1.5em;
     height: 9em;
     max-width: 15em;
   }
 }
-
-.shake {
-  background-image: url("../img/shake.png");
-  background-image: url("../img/shake.svg"), none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 50%;
-  max-width: 12em;
-  position: absolute;
-  bottom: 22em;
-  height: 5em;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
+@media (max-width: 320px) {
+  .happy {
+    top: 1.5em;
+    height: 7em;
+    max-width: 12em;
+  }
 }
-@media (max-width: 400px) {
-  .shake {
-    bottom: 14.5em;
-    height: 4em;
-    max-width: 9em;
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.tada {
+  animation-name: tada;
+}
+
+@keyframes tada {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -5deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 5deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -5deg);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }
